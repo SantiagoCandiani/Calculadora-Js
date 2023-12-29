@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/calculadora_styles.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="main">
+        <form name="calc">
+            <input type="text" name="box" placeholder="0" id="box">
+            <br>
+            <input type="button" value="1" onclick="agregarNumero(1)">
+            <input type="button" value="2" onclick="agregarNumero(2)">
+            <input type="button" value="3" onclick="agregarNumero(3)">
+            <input type="button" value="+" onclick="agregarOperador('+')">
+            <br>
+            <input type="button" value="4" onclick="agregarNumero(4)">
+            <input type="button" value="5" onclick="agregarNumero(5)">
+            <input type="button" value="6" onclick="agregarNumero(6)">
+            <input type="button" value="-" onclick="agregarOperador('-')">
+            <br>
+            <input type="button" value="7" onclick="agregarNumero(7)">
+            <input type="button" value="8" onclick="agregarNumero(8)">
+            <input type="button" value="9" onclick="agregarNumero(9)">
+            <input type="button" value="/" onclick="agregarOperador('/')">
+            <br>
+            <input type="button" value="C" onclick="calc.box.value=''">
+            <input type="button" value="0" onclick="agregarNumero(0)">
+            <input type="button" value="=" onclick="calcularResultado()">
+            <input type="button" value="x" onclick="agregarOperador('*')">
+            <br>
+        </form>
+
+    </div>
+
+    <script src="/calculadora_scripts.js"></script>
+
+</body>
+
+</html>
